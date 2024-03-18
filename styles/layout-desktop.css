@@ -1,33 +1,3 @@
-/* Import the Font */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Recursive:wght@300..1000&display=swap');
-
-:root {
-  /* Variables */
-  --primary-dark-color: #212333;
-  --secondary-dark-color: #3d3d47;
-  --tertiary-dark-color: #446d64;
-  --font-dark: #f0fff0;
-  
-  --primary-light-color: #383ab6;
-  --secondary-light-color: #e8ece8;
-  --tertiary-light-color: #76aadf;
-  --font-light: #152924;
-  
-  --base-red-color: #ce4444;
-  --base-blue-color: #4174b8;
-  --base-yellow-color: #cea41a;
-  
-  --transition: all 300ms ease-in-out;
-  
-  font-size: 16px;
-  font-family: 'Recursive', 'Open Sans', 'Garamond', 'Segoe UI', -apple-system, system-ui, sans-serif;
-}
-
-/* Change the Headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Merriweather', 'Georgia', -apple-system, system-ui, serif;
-}
-
 /* Grid Based Layout - Dynamic !DO NOT TOUCH */
 .content {
   --gap: clamp(1rem, 6vw, 3rem);
@@ -66,3 +36,5 @@ h1, h2, h3, h4, h5, h6 {
 .content > * {
   margin: 0 0 0.5rem 0;
 }
+
+/* Flex based layout - Dynamic */
