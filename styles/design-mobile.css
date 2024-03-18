@@ -1,0 +1,11 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.content > * {
+    flex: 1;
+}
+
+/* Continue Design Here */
