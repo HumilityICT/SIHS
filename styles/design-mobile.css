@@ -1,11 +1,26 @@
-.content {
+/* Mobile Design goes here */
+nav.nav-list {
+    height: min-content;
+    max-height: calc(5vh * 2);
+    background-color: beige;
+
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    align-items: center;
+    justify-content: center;
 }
 
-.content > * {
-    flex: 1;
-}
+a.nav-link {
+    padding: 1em;
+    transition: var(--transition);
 
-/* Continue Design Here */
+    &:link {
+        color: color-mix(in srgb, var(--color-font) 10%, #57d1e7f8 90%);
+        text-decoration-color: color-mix(in hsl shorter hue,  var(--color-font) 2%, #0010a0 50%);
+    }
+
+    &:hover, &:active {
+        color: color-mix(in srgb, var(--color-font) 2%, #0010a0 50%);
+        text-decoration-color: color-mix(in hsl shorter hue, var(--color-font) 10%, #57d1e7f8 90%);
+        background-color: color-mix(in srgb, var(--color-font) 2%, #0010a02a 50%);
+    }
+}

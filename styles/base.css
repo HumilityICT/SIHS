@@ -2,21 +2,24 @@
    For easier dark and light mode */
 :root {
     /* Variables */
-    --primary-dark-color: #212333;
-    --secondary-dark-color: #3d3d47;
-    --tertiary-dark-color: #446d64;
-    --font-dark: #f0fff0;
+    --color-top: #134c6d;
+    --color-top-content: #e9fff8;
+    --color-body: #0e3f7e;
+    --color-body-content: #c9d7eb;
+    --color-body-highlight: #73d4e0;
+    --color-foot: #211f3f;
+    --color-foot-content: #cddbee;
+    --color-font: #152924;
     
-    --primary-light-color: #383ab6;
-    --secondary-light-color: #e8ece8;
-    --tertiary-light-color: #76aadf;
-    --font-light: #152924;
+    --color-base-red: #af3a3a;
+    --color-base-red-content: #f0d4d4;
+    --color-base-blue: #4174b8;
+    --color-base-blue-content: #c9d7eb;
+    --color-base-yellow: #c49923;
+    --color-base-yellow-content: #ddd6bf;
     
-    --base-red-color: #ce4444;
-    --base-blue-color: #4174b8;
-    --base-yellow-color: #cea41a;
-    
-    --transition: all 300ms ease-in-out;
+    --transition-all: all 300ms ease-in-out;
+    --transition-modifiers: 300ms ease-in-out;
     
     color-scheme: only light;
     font-size: 16px;
