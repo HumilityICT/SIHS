@@ -1,16 +1,53 @@
 /* Mobile Design goes here */
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+header {
+    padding: 1em;
+    min-height: min-content;
+    max-height: calc(10vh * 5);
+    background: linear-gradient(-60deg, azure 5%, lightblue 20%, skyblue 60%, royalblue);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+header > .logo {
+    --size: 6em;
+    aspect-ratio: 1/1;
+    height: var(--size);
+    width: var(--size);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+}
+
+header > .title {
+    padding: 0.5em;
+    text-wrap: pretty;
+    text-align: center;
+    background: color-mix(in srgb, var(--color-font) 10%, rgba(255, 255, 255, 0.15) 90%);
+    border-radius: 0.5em;
+}
+
 nav.nav-list {
+    padding-inline: 1em;
     height: min-content;
     max-height: calc(5vh * 2);
     background-color: beige;
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-a.nav-link {
-    padding: 1em;
+nav > a.nav-link {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 1em 0.5em;
     transition: var(--transition);
 
     &:link {
