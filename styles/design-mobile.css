@@ -2,6 +2,7 @@
 /* Custom Icon Styling */
 ion-icon {
     font-size: 2em;
+    color: var(--color-font);
 }
 
 /* Header */
@@ -42,6 +43,9 @@ nav.nav-list {
     background-color: var(--color-top-content);
     border-top: 0.2em solid var(--color-top);
     border-bottom: 0.2em solid var(--color-top);
+    position: sticky;
+    top: 0;
+    z-index: 2;
 
     display: flex;
     align-items: center;
@@ -91,6 +95,15 @@ nav > a.nav-link {
 .sub.notice {
     background-color: var(--color-body-highlight);
     border-left: 0.5em solid color-mix(in srgb, var(--color-body-highlight) 50%, #000 50%);
+}
+
+.news {
+    height: min(min-content, calc(max-content + (1em * 2)));
+    padding: min(5vw, 1em);
+    border-radius: 10px;
+    outline: 0.15em dashed salmon;
+
+    background-color: var(--color-body-news);
 }
 
 main.content {
