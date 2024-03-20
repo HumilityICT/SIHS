@@ -3,10 +3,11 @@
 :root {
     /* Variables */
     --color-top: #134c6d;
-    --color-top-content: #e9fff8;
+    --color-top-content: #d1e4dd;
     --color-body: #0e3f7e;
-    --color-body-content: #c9d7eb;
-    --color-body-highlight: #73d4e0;
+    --color-body-heading: #c9d7eb;
+    --color-body-content: #dff7f5;
+    --color-body-highlight: #addfd2;
     --color-foot: #211f3f;
     --color-foot-content: #cddbee;
     --color-font: #152924;
@@ -71,6 +72,17 @@ input, button, textarea, select {
 /* Avoid text overflow */
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+    text-wrap: pretty;
+}
+
+article, section {
+    h1, h2, h3, h4, h5, h6 {
+        margin-block: min(2vh, 0.5em);
+    }
+
+    p {
+        font-size: 1.05em;
+    }
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */

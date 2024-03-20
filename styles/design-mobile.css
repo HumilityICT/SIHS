@@ -1,23 +1,25 @@
 /* Mobile Design goes here */
-body {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+/* Custom Icon Styling */
+ion-icon {
+    font-size: 2em;
 }
+
+/* Header */
 header {
-    padding: 1em;
+    padding: clamp(1em, 5%, 2em);
     min-height: min-content;
     max-height: calc(10vh * 5);
-    background: linear-gradient(-60deg, azure 5%, lightblue 20%, skyblue 60%, royalblue);
+    background: linear-gradient(-60deg, azure 2%, lightblue 20%, skyblue 63%, royalblue);
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 1em;
 }
 
 header > .logo {
-    --size: 6em;
+    --size: min(10vh, 6rem);
     aspect-ratio: 1/1;
     height: var(--size);
     width: var(--size);
@@ -26,18 +28,20 @@ header > .logo {
 }
 
 header > .title {
-    padding: 0.5em;
     text-wrap: pretty;
     text-align: center;
-    background: color-mix(in srgb, var(--color-font) 10%, rgba(255, 255, 255, 0.15) 90%);
-    border-radius: 0.5em;
+    color: color-mix(in hsl shorter hue, var(--color-font) 20%, #0010a0 80%);
+    font-family: 'Radley';
 }
 
+/* Navigation */
 nav.nav-list {
     padding-inline: 1em;
     height: min-content;
     max-height: calc(5vh * 2);
-    background-color: beige;
+    background-color: var(--color-top-content);
+    border-top: 0.2em solid var(--color-top);
+    border-bottom: 0.2em solid var(--color-top);
 
     display: flex;
     align-items: center;
@@ -60,4 +64,40 @@ nav > a.nav-link {
         text-decoration-color: color-mix(in hsl shorter hue, var(--color-font) 10%, #57d1e7f8 90%);
         background-color: color-mix(in srgb, var(--color-font) 2%, #0010a02a 50%);
     }
+}
+
+/* The Body */
+.sub {
+    height: min(min-content, calc(min-content + (1em * 2)));
+    padding-block: 0.5em;
+    padding-inline: 1em;
+    border-radius: 5px 20px 20px 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(0.25em, 0.5em, 1em);
+}
+
+.sub > *:not(ion-icon) {
+    flex: 1;
+}
+
+.sub.title {
+    background-color: var(--color-body-heading);
+    border-left: 0.5em solid color-mix(in srgb, var(--color-body-heading) 50%, #000 50%);
+}
+
+.sub.notice {
+    background-color: var(--color-body-highlight);
+    border-left: 0.5em solid color-mix(in srgb, var(--color-body-highlight) 50%, #000 50%);
+}
+
+main.content {
+    padding: clamp(.75rem, 3%, 2rem);
+    background-color: var(--color-body-content);
+
+    display: flex;
+    flex-direction: column;
+    gap: clamp(5px, 1svh, 3em);
 }
