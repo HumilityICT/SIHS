@@ -1,9 +1,12 @@
+/* Load the Necessary FONTS (Merriweather, Open Sans, Radley, Recursive) */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Radley:ital@0;1&family=Recursive:wght@300..1000&display=swap');
+
 /* Initialize the variables used 
 For easier dark and light mode */
 :root {
     /* Variables */
     --color-top: #234d63;
-    --color-top-content: #d1e4dd;
+    --color-top-content: #b4ceff;
     --color-nav: #fff5e7;
     --color-body: #0e3f7e;
     --color-body-heading: #c9d7eb;
@@ -17,6 +20,8 @@ For easier dark and light mode */
     
     --color-base-red: #af3a3a;
     --color-base-red-content: #f0d4d4;
+    --color-base-green: #44be9a;
+    --color-base-green-content: #d4f0e2;
     --color-base-blue: #4174b8;
     --color-base-blue-content: #c9d7eb;
     --color-base-yellow: #c49923;
@@ -26,7 +31,7 @@ For easier dark and light mode */
     --transition-modifiers: 300ms ease-in-out;
     
     color-scheme: only light;
-    color: var(--color-font);
+    color: var(--color-font-dark);
     font-size: 16px;
     font-family: 'Recursive', 'Open Sans', 'Garamond', 'Segoe UI', -apple-system, system-ui, sans-serif;
 }
@@ -76,11 +81,6 @@ img, picture, video, canvas, svg {
 /* Set the typography to inherit */
 input, button, textarea, select {
     font: inherit;
-}
-
-/* To set the listing easier to modify */
-ul[role="list"], ol[role="list"] {
-    list-style: none;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
