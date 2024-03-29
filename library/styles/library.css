@@ -1,0 +1,46 @@
+header {
+    height: min(15vh, min-content);
+    padding: 1em 1.5em;
+    background: url(../assets/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+header > .logo {
+    --size: 4em;
+
+    aspect-ratio: 1/1;
+    width: var(--size);
+    height: var(--size);
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+header > .title {
+    display: flex;
+    flex-direction: column;
+
+    & > span {
+        font-weight: 600;
+        font-family: 'Radley';
+    }
+
+    & > .web {
+        color: color-mix(in srgb, var(--color-font-light) 50%, #f5f5dc 25%);
+        font-size: 1.75em;
+    }
+
+    & > .page {
+        color: color-mix(in srgb, var(--color-font-light) 50%, #dcf5e4 25%);
+        font-size: 1.75em;
+    }
+}
+
+section.panel > img {
+    height: min(20vh, min-content);
+}
