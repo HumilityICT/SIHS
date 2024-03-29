@@ -14,3 +14,11 @@ This is a website of SIHS for practical research purpose only and not intended f
 - Must also have a github desktop account linked with their git
 - VS Code with the spell checker extentions and css/html extention and Live server to test run
 - Must appeal to be a contributor to HumilityICT or SleepyNightStar
+
+## To Contribute
+
+- One must have the requirements installed above
+- Second, use the cmd "git clone https://github.com/HumilityICT/SIHS"
+- Third, go to the folder in the cmd line "cd .\SIHS"
+- Fourth, Make their changes in the files inside
+- Lastly, git push origin
