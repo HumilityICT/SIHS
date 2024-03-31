@@ -62,14 +62,13 @@ body {
 /* Change the Headings */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', 'Georgia', -apple-system, system-ui, serif;
+    line-height: 1.75;
 }
 
 /* Avoid text overflow */
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
     text-wrap: pretty;
-    -webkit-hyphens: auto;
-    hyphens: auto;
 }
 
 /* To add media defaults */

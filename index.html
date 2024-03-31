@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="styles/base.css">
     
     <!-- For designing the components of both desktop and mobile-->
-    <link rel="stylesheet" media="screen and (max-width: 999px)" href="styles/design-mobile.css">
-    <link rel="stylesheet" media="screen and (min-width: 1000px)" href="styles/design-desktop.css">
+    <link rel="stylesheet" media="screen and (max-width: 999px)" href="styles/mobile-index.css">
+    <link rel="stylesheet" media="screen and (min-width: 1000px)" href="styles/desktop-index.css">
 </head>
 <body>
     
@@ -29,7 +29,7 @@
     </nav>
     
     <!-- Main Content -->
-    <main class="content">
+    <main class="main-content">
         <article class="definition">
             <h2 class="sub-title">
                 <span>Welcome to SIHS!</span>
@@ -70,19 +70,32 @@
     
     <!-- Footer -->
     <footer class="footer">        
-        <address>
-            <h3>Creators' Notes:</h3>
-            <p>This is a website with a sole purpose of being a material for practical research. It is not recommended nor it will be the main Sinalhan Integrated High School's website. For those with particular opinion or something. Message us using the links.</p>
-            <div class="links">
-                <h4>Creators' Email:</h4>
-                <p>Main: <a href="mailto:sleepynight04@gmail.com">sleepynight04@gmail.com</a></p>
-                <p>Sub <a href="http://">another email here</a></p>
+        <section class="notes block">
+            <h3 class="title">Message:</h3>
+            <div class="content">
+                <p>This website is created for the sole purpose of being a material in <abbr title="The researchers">our</abbr> practical research and is not really intended for other use. For those that wish to give message or opinions to us, feel free to message us in our gmail: <a href="mailto:sihs.msg@gmail.com">sihs.msg@gmail.com</a>.</p>
+                <br>
+                <p>Thank you for using our website! May the gods bless you.</p>
             </div>
-        </address>
+        </section>
+        <section class="related-links block">
+            <h3 class="title">Related Links:</h3>
+            <div class="content">
+                <p><strong>Facebook - Main:</strong> <a href="https://www.facebook.com/groups/679966622575376">Sinalhan Integrated High School</a></p>
+                <p><strong>Facebook - Student's Officer:</strong> <a href="https://www.facebook.com/SinalhanIHSSSG">Supreme Secondary Learner Government</a></p>
+            </div>
+        </section>
+        <section class="credits block">
+            <h3 class="title">Credits:</h3>
+            <div class="content">
+                <p><strong>Creator</strong> - Jay & Gian</p>
+                <p><strong>Helper</strong> - Cyrus</p>
+                <p><strong>Members</strong> - Gabriel, Owen, Nick, Michael, Darren, Jerome</p>
+            </div>
+        </section>
     </footer>
     
     <!-- Scripts -->
-    <script src="scripts/floats.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

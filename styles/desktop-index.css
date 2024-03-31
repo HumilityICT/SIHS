@@ -1,0 +1,36 @@
+/* Add Design Here */
+footer {
+    margin-top: 2em;
+    padding: 1em;
+    height: max-content;
+    min-width: 100vh;
+    max-width: 100%;
+    border-top: 0.5em solid var(--color-foot);
+    background-color: var(--color-foot-content);
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+footer > .notes {
+    flex: 2;
+}
+
+footer > :not(.notes) {
+    flex: 1;
+}
+
+.block {
+    padding: 0.5em 2em;
+
+    & > .title {
+        font-family: 'Radley';
+        font-weight: 900;
+        font-size: larger;
+    }
+
+    & > .content {
+        margin-left: 1em;
+        font-style: italic;
+    }
+}
