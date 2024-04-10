@@ -1,7 +1,7 @@
 /* Add Design Here */
 /* Misc */
 a {
-    color: #769FCD;
+    color: var(--color-font-light);
     text-decoration: transparent;
     transition: var(--transition-all);
 }
@@ -12,10 +12,10 @@ a:hover {
 
 /* Header Design */
 header {
+    --margin-size: 4em;
     height: 6rem;
-    background-color: var(--color-tertiary);
-    border-bottom: 2px solid lightgreen;
-    font-size: larger;
+    background-color: var(--color-tertiary2);
+    border-bottom: 0.5rem solid var(--color-primary2);
     
     display: flex;
     flex-direction: row;
@@ -23,31 +23,52 @@ header {
 }
 
 #title {
-    margin-inline: 6em auto;
+    margin-inline: var(--margin-size) auto;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: 'Radley';
+    color: var(--color-font-light);
 }
 
 .page-list {
-    margin-inline: auto 6em;
+    margin-inline: auto var(--margin-size);
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    font-size: larger;
+    gap: 0.25rem;
+}
+
+.page {
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.page.current {
+    background-color: color-mix(in srgb, var(--color-secondary2) 80%, #fff 20%);
+}
+
+.page:not(.page.current):hover {
+    background-color: color-mix(in srgb, var(--color-tertiary2) 80%, #fff 20%);
+}
+
+.page-link:hover {
+    text-decoration: underline var(--color-primary2) 4px;
 }
 
 /* Content Design */
 body {
-    background-color: var(--color-secondary);
+    background-color: beige;
 }
 
 /* Footer Design */
 footer {
-    margin-top: 2rem;
     padding: 1rem;
     height: max-content;
     min-width: 100vh;
     max-width: 100%;
-    border-top: 0.5em solid var(--color-primary);
-    background-color: var(--color-tertiary);
+    border-top: 0.5rem solid var(--color-primary);
+    background-color: var(--color-secondary);
     /* color: var(--color-tertiary); */
     
     display: flex;
@@ -68,7 +89,7 @@ footer > :not(.notes) {
     & > .title {
         font-family: 'Radley';
         font-weight: 900;
-        font-size: larger;
+        font-size: 1.5em;
     }
     
     & > .content {
