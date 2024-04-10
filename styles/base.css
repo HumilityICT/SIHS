@@ -5,18 +5,12 @@
 For easier dark and light mode */
 :root {
     /* Variables */
-    --color-top: #234d63;
-    --color-top-content: #b4ceff;
-    --color-nav: #fff5e7;
-    --color-body: #0e3f7e;
-    --color-body-heading: #c9d7eb;
-    --color-body-content: #dff7f5;
-    --color-body-highlight: #addfd2;
-    --color-body-news: #e7e4d4;
-    --color-foot: #29273d;
-    --color-foot-content: #cddbee;
+    --color-base: #f7f7f9;
+    --color-primary: #112D4E;
+    --color-secondary: #769FCD;
+    --color-tertiary: #DBE2EF;
     --color-font-dark: #152924;
-    --color-font-light: #f4fffc;
+    --color-font-light: #f4feff;
     
     --color-base-red: #af3a3a;
     --color-base-red-content: #f0d4d4;

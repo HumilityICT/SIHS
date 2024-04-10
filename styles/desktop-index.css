@@ -1,13 +1,55 @@
 /* Add Design Here */
+/* Misc */
+a {
+    color: #769FCD;
+    text-decoration: transparent;
+    transition: var(--transition-all);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Design */
+header {
+    height: 6rem;
+    background-color: var(--color-tertiary);
+    border-bottom: 2px solid lightgreen;
+    font-size: larger;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#title {
+    margin-inline: 6em auto;
+}
+
+.page-list {
+    margin-inline: auto 6em;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+/* Content Design */
+body {
+    background-color: var(--color-secondary);
+}
+
+/* Footer Design */
 footer {
-    margin-top: 2em;
-    padding: 1em;
+    margin-top: 2rem;
+    padding: 1rem;
     height: max-content;
     min-width: 100vh;
     max-width: 100%;
-    border-top: 0.5em solid var(--color-foot);
-    background-color: var(--color-foot-content);
-
+    border-top: 0.5em solid var(--color-primary);
+    background-color: var(--color-tertiary);
+    /* color: var(--color-tertiary); */
+    
     display: flex;
     flex-flow: row wrap;
 }
@@ -21,16 +63,16 @@ footer > :not(.notes) {
 }
 
 .block {
-    padding: 0.5em 2em;
-
+    padding: 0.5rem 2rem;
+    
     & > .title {
         font-family: 'Radley';
         font-weight: 900;
         font-size: larger;
     }
-
+    
     & > .content {
-        margin-left: 1em;
+        margin-left: 1rem;
         font-style: italic;
     }
 }
