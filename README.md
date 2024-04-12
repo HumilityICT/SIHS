@@ -14,13 +14,13 @@ No other users not who did not request to me is not allowed to push to my reposi
 
 - One must have installed git and has an account
 - Must also have a github desktop account linked with their git
-- VS Code with the spell checker extentions and css/html extention and Live server to test run
+- VS Code with the spell checker extensions and css/html extension and Live server to test run
 - Must appeal to be a contributor to HumilityICT or SleepyNightStar
 
 ## To Contribute
 
 - One must have the requirements installed above
-- Second, use the cmd "git clone https://github.com/HumilityICT/SIHS"
+- Second, use the cmd "git clone <https://github.com/HumilityICT/SIHS>"
 - Third, go to the folder in the cmd line "cd .\SIHS"
 - Fourth, Make their changes in the files inside
 - Fifth, Stage it and then commit
