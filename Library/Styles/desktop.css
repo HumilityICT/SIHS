@@ -4,7 +4,7 @@ header {
     padding: 1rem 3rem;
     border-bottom: 0.25em solid var(--color-primary);
 
-    background: url(../assets/library/background.jpeg);
+    background: url(/Library/Assets/Header.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
