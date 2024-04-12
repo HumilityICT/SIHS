@@ -2,6 +2,8 @@
 
 This is a website of SIHS for practical research purpose only and not intended for other use.
 
+No other users not who did not request to me is not allowed to push to my repositories.
+
 ## Contributor's Guidelines
 
 - One must not change those defined with "!Important" or "DO NOT CHANGE" tags/functions or definitions.  
