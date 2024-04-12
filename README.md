@@ -23,4 +23,5 @@ No other users not who did not request to me is not allowed to push to my reposi
 - Second, use the cmd "git clone https://github.com/HumilityICT/SIHS"
 - Third, go to the folder in the cmd line "cd .\SIHS"
 - Fourth, Make their changes in the files inside
+- Fifth, Stage it and then commit
 - Lastly, git push origin
