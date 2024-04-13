@@ -11,6 +11,15 @@
     <link rel="stylesheet" media="screen and (max-width: 999px)" href="Styles/mobile.css">
 </head>
 <body>
+    <!-- Go To Top Button -->
+    <button type="button" id="top-button" onclick="scrollToTop()">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+        <div class="tooltip">
+            Go to the top
+        </div>
+    </button>
+    
+    <!-- Header -->
     <header id="top">
         <img src="../School/Assets/logo.png" alt="The logo of Sinalhan Integrated High School" id="logo">
         <div id="title">Sinalhan Integrated <br> High School: <i>Library</i></div>
@@ -23,6 +32,8 @@
         </menu>
         <button type="button" id="menu"><ion-icon name="menu-outline"></ion-icon>Menu</button>
     </header>
+    
+    <!-- The Content -->
     <main>
         <div class="library grid-content">
             <div class="featured"></div>
@@ -105,7 +116,7 @@
                     </div>
                 </article>
             </section>
-
+            
             <section class="library-others">
                 <article id="grade7-others">
                     <div class="title">Grade 7 - Others</div>
@@ -134,41 +145,46 @@
             </section>
         </div>
     </main>
-    <footer class="grid-box">
-        <div class="grid-links">
-            <ul>
-                <li><a href="#">???</a></li>
-                <li><a href="#">???</a></li>
-                <li><a href="#">???</a></li>
-                <li><a href="#">???</a></li>
-                <li><a href="#">???</a></li>
-                <li><a href="#">???</a></li>
-                <li><a href="#">???</a></li>
-                <li><a href="#">???</a></li>
-            </ul>
-        </div>
-        <div class="grid-blocks">
-            <div class="title">Contact Us</div>
+    
+    <!-- The Credits -->
+    <footer>
+        <div class="message-blocks">
+            <div class="title">Code Of Ethics</div>
             <address class="desc">
-                Prk 3, Brgy. Sinalhan, <br>
-                Santa Rosa, Laguna <br>
-                If you have any problems or inquiries, <br>
-                You can email us at <a href="mailto:sihs.msg@gmail.com">sihs.msg@gmail.com</a>. <br>
-                SY2023 - SY2024
+                <p>
+                    This website is not advised to be used outside of practical research or testing use and must be used with caution as it is currently <abbr title="Work In Progress">WIP</abbr>.
+                </p>
+                <p>Opinions and Feedback are open to public and would be appreciated if given.</p>
+                <p>
+                    If there are any, please email us or contact our great associate <a href="https://www.facebook.com/profile.php?id=100083517423964">Mr. Nick</a>.
+                </p>
             </address>
         </div>
-        <div class="grid-blocks">
-            <div class="title">Code Of Ethics</div>
-            <p class="desc">
-                This website is not advised to be used outside of practical research or testing use and must be used with caution as it is currently <abbr title="Work In Progress">WIP</abbr>.
-                Opinions and Feedback are open to public and would be appreciated if given.
-                If there are any, please email us or contact our great associate <a href="https://www.facebook.com/profile.php?id=100083517423964">Mr. Nick</a>.
-            </p>
+        <div class="address-blocks">
+            <div class="title">Contact Us</div>
+            <address class="address">
+                <p>Prk 3, Brgy. Sinalhan, <br> Santa Rosa, Laguna</p>
+                <p>If you have any problems or inquiries, You can email us at our gmail, <a href="mailto:sihs.msg@gmail.com">sihs.msg@gmail.com</a>.</p>
+                <p>SY2023 - SY2024</p>
+            </address>
+        </div>
+        <div class="link-blocks">
+            <div class="title">Related Links</div>
+            <div class="desc">
+                <a href="#">The Creators</a>
+                <a href="#">???</a>
+                <a href="#">???</a>
+                <a href="#">???</a>
+                <a href="#">???</a>
+                <a href="#">???</a>
+                <a href="#">???</a>
+            </div>
         </div>
     </footer>
     
     <!-- Script -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="Scripts/functions.js"></script>
 </body>
 </html>

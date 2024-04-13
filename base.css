@@ -5,16 +5,17 @@
 For easier dark and light mode */
 :root {
     /* Variables */
-    --color-blue-zero: #fff;
-    --color-blue-first: #070D59;
-    --color-blue-second: #1f3c88;
-    --color-blue-third: #84fbffce;
-    --color-blue-fourth: #ceddef;
-    
-    --color-purple-first: #000278;
-    --color-purple-second: #192294;
-    --color-purple-third: #5254d8;
-    --color-purple-fourth: #b7b9f4;
+    --color-midnight: #031225;
+    --color-darkblue: #16295e;
+    --color-blue: #3151a3;
+    --color-aqua: #84fbffce;
+    --color-azure: #ceddef;
+
+    --color-abyss: #030825;
+    --color-night: #1d165e;
+    --color-purple: #4231a3;
+    --color-violet: #a984ffce;
+    --color-fuchsia: #d7ceef;
 
     --color-font-dark: #152229;
     --color-font-light: #e4fbff;
