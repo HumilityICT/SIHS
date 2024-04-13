@@ -1,7 +1,7 @@
 /* Add Design Here */
 /* Misc */
 a {
-    color: var(--color-font-light);
+    color: var(--color-font-dark);
     text-decoration: transparent;
     transition: var(--transition-all);
 }
@@ -67,8 +67,8 @@ footer {
     height: max-content;
     min-width: 100vh;
     max-width: 100%;
-    border-top: 0.5rem solid var(--color-primary);
-    background-color: var(--color-secondary);
+    border-top: 0.5rem solid var(--color-blue-first);
+    background-color: var(--color-blue-fourth);
     /* color: var(--color-tertiary); */
     
     display: flex;

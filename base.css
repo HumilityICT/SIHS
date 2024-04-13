@@ -5,17 +5,25 @@
 For easier dark and light mode */
 :root {
     /* Variables */
-    --color-base: #f7f7f9;
-    --color-primary: #112D4E;
-    --color-secondary: #769FCD;
-    --color-tertiary: #DBE2EF;
-    --color-base2: #E3FEF7;
-    --color-primary2: #003C43;
-    --color-secondary2: #135D66;
-    --color-tertiary2: #77B0AA;
+    --color-blue-zero: #fff;
+    --color-blue-first: #070D59;
+    --color-blue-second: #1f3c88;
+    --color-blue-third: #84fbffce;
+    --color-blue-fourth: #ceddef;
+    
+    --color-purple-first: #000278;
+    --color-purple-second: #192294;
+    --color-purple-third: #5254d8;
+    --color-purple-fourth: #b7b9f4;
 
-    --color-font-dark: #152924;
-    --color-font-light: #f4feff;
+    --color-font-dark: #152229;
+    --color-font-light: #e4fbff;
+
+    --color-link-dark: #000231;
+    --color-link-light: #fffdd0;
+    --color-link-dark-hover: #24ad68;
+    --color-link-light-hover: #a3fde2;
+    --color-link-disabled: #777;
     
     --color-base-red: #af3a3a;
     --color-base-red-content: #f0d4d4;
@@ -23,11 +31,12 @@ For easier dark and light mode */
     --color-base-green-content: #d4f0e2;
     --color-base-blue: #4174b8;
     --color-base-blue-content: #c9d7eb;
-    --color-base-yellow: #c49923;
-    --color-base-yellow-content: #ddd6bf;
     
-    --transition-all: all 300ms ease-in-out;
-    --transition-modifiers: 300ms ease-in-out;
+    --transition-500: all 500ms ease-in-out;
+    --transition-400: all 400ms ease-in-out;
+    --transition-300: all 300ms ease-in-out;
+    --transition-200: all 200ms ease-in-out;
+    --transition-100: all 100ms ease-in-out;
     
     color-scheme: only light;
     color: var(--color-font-dark);
@@ -65,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Avoid text overflow */
-p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6, span {
     overflow-wrap: break-word;
     text-wrap: pretty;
 }
