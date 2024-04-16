@@ -1,0 +1,62 @@
+/* Header */
+header {
+    padding: 1.25rem 4rem;
+    background: var(--color-midnight);
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#logo {
+    --size: 100px;
+    aspect-ratio: 1 / 1;
+    width: var(--size);
+    height: var(--size);
+}
+
+#title {
+    font-size: x-large;
+    color: snow;
+
+    i {
+        color: lightgreen;
+    }
+}
+
+/* Navigation */
+.nav-panel {
+    margin-left: auto;
+}
+
+.nav-list {
+    --border-radius: 10px;
+    list-style-type: none;
+    background: linear-gradient(to right, azure, lightblue);
+    border-radius: var(--border-radius);
+
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.nav-item {
+    padding: 1rem;
+
+    &:hover, &:active {
+        background: purple;
+        border-radius: var(--border-radius);
+    }
+}
+
+.nav-link {
+    font-size: large;
+
+    &:link, &:visited {
+        color: var(--color-font-dark);
+    }
+
+    &:hover, &:active {
+        color: var(--color-font-light);
+    }
+}

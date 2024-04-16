@@ -5,13 +5,13 @@
 For easier dark and light mode */
 :root {
     /* Variables */
-    --color-midnight: #031225;
+    --color-midnight: #071b36;
     --color-darkblue: #16295e;
     --color-blue: #3151a3;
     --color-aqua: #84fbffce;
     --color-azure: #ceddef;
 
-    --color-abyss: #030825;
+    --color-abyss: #100736;
     --color-night: #1d165e;
     --color-purple: #4231a3;
     --color-violet: #a984ffce;
@@ -105,4 +105,54 @@ input, button, textarea, select {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+/* 
+.reference {
+    scale: 0 1;
+    transform-origin: left;
+
+    animation: scroll-watcher linear;
+    animation-timeline: scroll()/view();
+    animation-range: x y;
+}
+*/
+
+/* Animations For Web !DO NOT REMOVE */
+@keyframes scroll-watcher {
+    to {
+        scale: 1 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        scale: 0.8;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+/* Button Top */
+#top-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 0.5rem;
+    font-size: 1.5em;
+    border-radius: 50%;
+    border: none;
+    background: var(--color-darkblue);
+    color: var(--color-font-light);
+
+    display: flex;
+    align-items: center;
+}
+
+img#logo {
+    background: white;
+    border-radius: 50%;
 }
