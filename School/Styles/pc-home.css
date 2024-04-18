@@ -2,7 +2,6 @@
 /* Misc */
 a {
     color: var(--color-font-dark);
-    text-decoration: transparent;
     transition: var(--transition-all);
 }
 
@@ -14,8 +13,7 @@ a:hover {
 header {
     --margin-size: 4em;
     height: 6rem;
-    background-color: var(--color-tertiary2);
-    border-bottom: 0.5rem solid var(--color-primary2);
+    background-color: var(--color-abyss);
     
     display: flex;
     flex-direction: row;
@@ -44,16 +42,21 @@ header {
     border-radius: 15px;
 }
 
+.page-link {
+    color: var(--color-font-light);
+    text-decoration: transparent;
+}
+
 .page.current {
-    background-color: color-mix(in srgb, var(--color-secondary2) 80%, #fff 20%);
+    background-color: color-mix(in srgb, var(--color-violet) 80%, #fff 20%);
 }
 
 .page:not(.page.current):hover {
-    background-color: color-mix(in srgb, var(--color-tertiary2) 80%, #fff 20%);
-}
-
-.page-link:hover {
-    text-decoration: underline var(--color-primary2) 4px;
+    background-color: color-mix(in srgb, var(--color-azure) 80%, #fff 20%);
+    
+    .page-link {
+        color: var(--color-font-dark);
+    }
 }
 
 /* Content Design */
@@ -67,8 +70,7 @@ footer {
     height: max-content;
     min-width: 100vh;
     max-width: 100%;
-    border-top: 0.5rem solid var(--color-blue-first);
-    background-color: var(--color-blue-fourth);
+    background-color: var(--color-violet);
     /* color: var(--color-tertiary); */
     
     display: flex;

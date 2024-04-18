@@ -16,8 +16,10 @@ header {
 }
 
 #title {
-    font-size: x-large;
+    font-size: 2rem;
     color: snow;
+    font-family: 'Radley';
+    font-weight: bolder;
 
     i {
         color: lightgreen;
@@ -32,7 +34,6 @@ header {
 .nav-list {
     --border-radius: 10px;
     list-style-type: none;
-    background: linear-gradient(to right, azure, lightblue);
     border-radius: var(--border-radius);
 
     display: flex;
@@ -42,21 +43,24 @@ header {
 
 .nav-item {
     padding: 1rem;
+    border-radius: var(--border-radius);
 
-    &:hover, &:active {
-        background: purple;
-        border-radius: var(--border-radius);
+    &.current {
+        background-color: color-mix(in srgb, var(--color-violet) 80%, #fff 20%);
+    }
+
+    &:not(.nav-item.current):hover, &:active {
+        background-color: color-mix(in srgb, var(--color-azure) 80%, #fff 20%);
+
+        .nav-link {
+            text-decoration: underline;
+            color: var(--color-font-dark);
+        }
     }
 }
 
 .nav-link {
-    font-size: large;
-
-    &:link, &:visited {
-        color: var(--color-font-dark);
-    }
-
-    &:hover, &:active {
-        color: var(--color-font-light);
-    }
+    font-size: larger;
+    color: var(--color-font-light);
+    text-decoration: transparent;
 }
