@@ -5,33 +5,19 @@
 For easier dark and light mode */
 :root {
     /* Variables */
+    --color-abyss: #100736;
     --color-midnight: #071b36;
     --color-darkblue: #16295e;
-    --color-blue: #3151a3;
-    --color-aqua: #84fbffce;
-    --color-azure: #ceddef;
-
-    --color-abyss: #100736;
-    --color-night: #1d165e;
-    --color-purple: #4231a3;
-    --color-violet: #c4aef8ce;
-    --color-fuchsia: #d7ceef;
+    --color-violet: #c4aef8;
+    --color-lightblue: #cee3ef;
+    --color-azure: #f0ffff;
 
     --color-font-dark: #152229;
     --color-font-light: #e4fbff;
-
-    --color-link-dark: #000231;
-    --color-link-light: #fffdd0;
-    --color-link-dark-hover: #24ad68;
-    --color-link-light-hover: #a3fde2;
-    --color-link-disabled: #777;
     
     --color-base-red: #af3a3a;
-    --color-base-red-content: #f0d4d4;
     --color-base-green: #44be9a;
-    --color-base-green-content: #d4f0e2;
     --color-base-blue: #4174b8;
-    --color-base-blue-content: #c9d7eb;
     
     --transition-500: all 500ms ease-in-out;
     --transition-400: all 400ms ease-in-out;
@@ -155,4 +141,8 @@ input, button, textarea, select {
 img#logo {
     background: white;
     border-radius: 50%;
+}
+
+body {
+    background: var(--color-azure);
 }

@@ -1,0 +1,45 @@
+header {
+    padding-top: 2rem;
+    height: clamp(250px, 15rem, 25%);
+    background: var(--color-midnight);
+    color: var(--color-font-light);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo {
+    --size: clamp(125px, 8rem , 40%);
+    width: var(--size);
+    aspect-ratio: 1 / 1;
+}
+
+#title i {
+    color: #87cefa;
+}
+
+.nav-panel {
+    width: 100%;
+}
+
+.nav-list {
+    padding-inline: 1rem;
+    list-style-type: none;
+    background: var(--color-lightblue);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.nav-item {
+    padding-block: 1rem;
+}
+
+.nav-link {
+    font-size: large;
+    color: var(--color-font-dark);
+}
