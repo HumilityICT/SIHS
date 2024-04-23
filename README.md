@@ -1,8 +1,7 @@
 # SIHS
 
 This is a website of SIHS for practical research purpose only and not intended for other use.
-
-No other users not who did not request to me is not allowed to push to my repositories.
+Users who want to contribute must notify me through this email <sihs.msg@gmail.com> and must be a student of SIHS.
 
 ## Contributors
 - Jay - created and set-upped most things in the web page

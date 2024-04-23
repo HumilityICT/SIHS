@@ -1,11 +1,15 @@
 /* Header */
+body {
+    --content-padding: clamp(3rem, 6rem, 8rem);
+}
+
 header {
-    padding: 1.25rem clamp(3rem, 6rem, 8rem);
+    padding: 1.25rem var(--content-padding);
     background: var(--color-midnight);
     
     display: flex;
     align-items: center;
-    gap: clamp(1rem, 3rem, 5rem);
+    gap: 1rem;
 }
 
 #logo {
@@ -20,6 +24,7 @@ header {
     color: snow;
     font-family: 'Radley';
     font-weight: bolder;
+    /* padding-left: 2rem; */
     
     i {
         color: var(--color-blue);
@@ -29,6 +34,7 @@ header {
 /* Navigation */
 .nav-panel {
     margin-left: auto;
+    width: max-content;
 }
 
 .nav-list {
@@ -51,7 +57,7 @@ header {
     
     &:hover .nav-link {
         text-decoration: underline;
-        color: var(--color-base-green);
+        color: var(--color-font-dark);
     }
     
     &:not(.nav-item.current):hover, &:active {
@@ -65,3 +71,5 @@ header {
     color: var(--color-font-light);
     text-decoration: transparent;
 }
+
+/* Content Design */

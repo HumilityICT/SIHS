@@ -29,30 +29,42 @@ header {
 }
 
 .nav-panel {
-    width: 100%;
+    width: max-content;
 }
 
 .nav-list {
     padding-inline: 1rem;
     list-style-type: none;
-    background: var(--color-lightblue);
+    background: var(--color-darkblue);
 
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: row;
     overflow-x: auto;
+    gap: 0.25rem;
 }
 
 .nav-item {
     padding: 1rem 0.5rem;
 
     &.current {
-        background-color: color-mix(in srgb, var(--color-violet) 80%, #fff 20%);
+        background-color: var(--color-blue);
+    }
+    
+    &:hover .nav-link {
+        text-decoration: underline;
+        color: var(--color-font-dark);
+    }
+    
+    &:not(.nav-item.current):hover, &:active {
+        background-color: color-mix(in srgb, var(--color-blue) 50%, rgba(255, 255, 255, 0.75) 50%);
     }
 }
 
 .nav-link {
     font-size: larger;
-    color: var(--color-font-dark);
+    font-weight: bolder;
+    color: var(--color-font-light);
+    text-decoration: transparent;
 }

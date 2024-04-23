@@ -143,7 +143,3 @@ img#logo {
     background: white;
     border-radius: 50%;
 }
-
-body {
-    background: var(--color-azure);
-}
