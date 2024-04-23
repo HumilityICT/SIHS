@@ -25,5 +25,3 @@ No other users not who did not request to me is not allowed to push to my reposi
 - Fourth, Make their changes in the files inside
 - Fifth, Stage it and then commit
 - Lastly, git push origin
-
-Darren is Here!
