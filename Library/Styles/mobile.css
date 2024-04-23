@@ -16,8 +16,15 @@ header {
     aspect-ratio: 1 / 1;
 }
 
-#title i {
-    color: #87cefa;
+#title {
+    font-size: 2rem;
+    color: snow;
+    font-family: 'Radley';
+    font-weight: bolder;
+
+    i {
+        color: #87cefa;
+    }
 }
 
 .nav-panel {
@@ -36,7 +43,11 @@ header {
 }
 
 .nav-item {
-    padding-block: 1rem;
+    padding: 1rem 0.5rem;
+
+    &.current {
+        background-color: color-mix(in srgb, var(--color-violet) 80%, #fff 20%);
+    }
 }
 
 .nav-link {

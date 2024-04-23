@@ -24,11 +24,7 @@ No other users not who did not request to me is not allowed to push to my reposi
 - Third, go to the folder in the cmd line "cd .\SIHS"
 - Fourth, Make their changes in the files inside
 - Fifth, Stage it and then commit
-<<<<<<< HEAD
-- Lastly, git push origin
-=======
 - Lastly, git push origin
 
 Darren is Here!
 Nick is Here!
->>>>>>> b49ad92eff485dc1ba179fa4e57caf109b97b1a4
