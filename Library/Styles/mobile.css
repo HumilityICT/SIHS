@@ -21,6 +21,7 @@ header {
     color: snow;
     font-family: 'Radley';
     font-weight: bolder;
+    text-align: center;
 
     i {
         color: var(--color-blue);
@@ -39,7 +40,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-flow: wrap;
+    flex-flow: row;
+    overflow-x: auto;
 }
 
 .nav-item {
@@ -51,6 +53,6 @@ header {
 }
 
 .nav-link {
-    font-size: large;
+    font-size: larger;
     color: var(--color-font-dark);
 }
