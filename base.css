@@ -16,9 +16,9 @@ For easier dark and light mode */
     --color-font-dark: #152229;
     --color-font-light: #e4fbff;
     
-    --color-base-red: #af3a3a;
-    --color-base-green: #44be9a;
-    --color-base-blue: #4174b8;
+    --color-base-red: #e45252;
+    --color-base-green: #52e4b8;
+    --color-base-blue: #526de4;
     
     --transition-500: all 500ms ease-in-out;
     --transition-400: all 400ms ease-in-out;

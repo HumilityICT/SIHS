@@ -1,11 +1,11 @@
 /* Header */
 header {
-    padding: 1.25rem 4rem;
+    padding: 1.25rem clamp(3rem, 6rem, 8rem);
     background: var(--color-midnight);
-
+    
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: clamp(1rem, 3rem, 5rem);
 }
 
 #logo {
@@ -20,9 +20,9 @@ header {
     color: snow;
     font-family: 'Radley';
     font-weight: bolder;
-
+    
     i {
-        color: #87cefa;
+        color: var(--color-blue);
     }
 }
 
@@ -35,7 +35,7 @@ header {
     --border-radius: 10px;
     list-style-type: none;
     border-radius: var(--border-radius);
-
+    
     display: flex;
     align-items: center;
     gap: 0.25rem;
@@ -44,23 +44,24 @@ header {
 .nav-item {
     padding: 1rem;
     border-radius: var(--border-radius);
-
+    
     &.current {
-        background-color: color-mix(in srgb, var(--color-violet) 80%, #fff 20%);
+        background-color: var(--color-blue);
     }
-
+    
+    &:hover .nav-link {
+        text-decoration: underline;
+        color: var(--color-base-green);
+    }
+    
     &:not(.nav-item.current):hover, &:active {
-        background-color: color-mix(in srgb, var(--color-azure) 80%, #fff 20%);
-
-        .nav-link {
-            text-decoration: underline;
-            color: var(--color-font-dark);
-        }
+        background-color: color-mix(in srgb, var(--color-blue) 50%, rgba(255, 255, 255, 0.75) 50%);
     }
 }
 
 .nav-link {
-    font-size: larger;
+    font-size: min(30px, 1.5rem);
+    font-weight: bolder;
     color: var(--color-font-light);
     text-decoration: transparent;
 }

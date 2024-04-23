@@ -23,7 +23,7 @@ header {
     font-weight: bolder;
 
     i {
-        color: #87cefa;
+        color: var(--color-blue);
     }
 }
 
