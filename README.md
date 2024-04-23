@@ -4,6 +4,13 @@ This is a website of SIHS for practical research purpose only and not intended f
 
 No other users not who did not request to me is not allowed to push to my repositories.
 
+## Contributors
+- Jay - created and set-upped most things in the web page
+- Gian - created the school part and the main web page
+- Darren - contributed in the school part of the web page
+- Nick - contributed in the school part of the web page
+- Gabriel - contributed in the school part of the web page
+
 ## Contributor's Guidelines
 
 - One must not change those defined with "!Important" or "DO NOT CHANGE" tags/functions or definitions.  
@@ -25,6 +32,3 @@ No other users not who did not request to me is not allowed to push to my reposi
 - Fourth, Make their changes in the files inside
 - Fifth, Stage it and then commit
 - Lastly, git push origin
-
-Darren is Here!
-Nick is Here!
