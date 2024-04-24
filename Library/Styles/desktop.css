@@ -1,5 +1,5 @@
 body {
-    --content-padding: clamp(3rem, 6rem, 8rem);
+    --content-padding: clamp(3rem, 4rem, 8rem);
     scroll-behavior: smooth;
 }
 
@@ -10,7 +10,7 @@ header {
     
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 /* Styles the logo */
@@ -65,6 +65,7 @@ header {
 
 /* Styles the links per item */
 .nav-item {
+    width: max-content;
     padding: 1rem;
     border-radius: var(--border-radius);
     
@@ -81,7 +82,7 @@ header {
     
     /* Styles nav item excluding the current one */
     &:not(.nav-item.current):hover, &:active {
-        background-color: color-mix(in srgb, var(--color-blue) 50%, rgba(255, 255, 255, 0.75) 50%);
+        background-color: var(--color-selected);
     }
 }
 
@@ -90,6 +91,7 @@ header {
     font-size: min(30px, 1.5rem);
     font-weight: bolder;
     color: var(--color-font-light);
+    text-align: center;
 }
 
 /* Content Design */
@@ -123,7 +125,6 @@ header {
         margin-top: 2rem;
         padding: 1rem 2rem;
         border-radius: 10px;
-        font-weight: bolder;
         background: var(--color-blue);
         color: var(--color-font-dark);
     }
@@ -133,7 +134,86 @@ header {
     }
 }
 
-/* For the module intro */
+/* For the module tags and design */
+#modules {
+    padding-block: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    background: var(--color-azure);
+}
+
+/* For search bar */
+#search-bar {
+    --input-bottom: var(--color-darkblue);
+    padding-bottom: 0.5rem;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+    border: transparent;
+
+    &:is(:active, :focus-within) {
+        border-bottom: 1px solid var(--input-bottom);
+    }
+}
+
+#search-icon {
+    --size: 2rem;
+    width: var(--size);
+    aspect-ratio: 1 / 1;
+}
+
+#search-input {
+    border: none;
+    font-size: larger;
+    background: transparent;
+
+    &:is(:hover, :active, :focus-within) {
+        outline: none;
+    }
+
+    &::placeholder {
+        color: var(--color-font-dark);
+    }
+}
+
+#search-button {
+    padding: 0.5rem 2rem;
+    background: var(--color-darkblue);
+    border-radius: 10px;
+    border: none;
+    color: var(--color-font-light);
+    cursor: pointer;
+}
+
+.tag-list {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding-block: 1rem;
+    background: var(--color-midnight);
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.tag-list li {
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    
+    &:hover {
+        background: var(--color-selected);
+    }
+
+    a {
+        color: var(--color-font-light);
+    }
+}
 
 /* For the modules itself */
 .grades {

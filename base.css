@@ -13,6 +13,8 @@ For easier dark and light mode */
     --color-lightblue: #cee3ef;
     --color-azure: #f0ffff;
 
+    --color-selected: color-mix(in srgb, var(--color-blue) 50%, rgba(255, 255, 255, 0.75) 50%);
+
     --color-font-dark: #152229;
     --color-font-light: #e4fbff;
     
@@ -145,6 +147,7 @@ img#logo {
 }
 
 a {
+    font-weight: bolder;
     text-decoration: transparent;
     text-align: center;
     display: inline-block;
