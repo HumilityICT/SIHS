@@ -143,3 +143,10 @@ img#logo {
     background: white;
     border-radius: 50%;
 }
+
+a {
+    text-decoration: transparent;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s;
+}

@@ -20,14 +20,26 @@ header {
 }
 
 #title {
-    font-size: 2rem;
     color: snow;
     font-family: 'Radley';
     font-weight: bolder;
-    /* padding-left: 2rem; */
     
     i {
         color: var(--color-blue);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    br {
+        display: none;
+    }
+    
+    header {
+        gap: 2rem;
+    }
+    
+    #title {
+        font-size: 2.25rem;
     }
 }
 
@@ -69,7 +81,21 @@ header {
     font-size: min(30px, 1.5rem);
     font-weight: bolder;
     color: var(--color-font-light);
-    text-decoration: transparent;
 }
 
 /* Content Design */
+.featured {
+    /* Photo by mnm.all on Unsplash */
+    background: url('https://images.unsplash.com/photo-1518176258769-f227c798150e') center;
+    background-size: cover;
+    padding: 4rem 2rem;
+    
+    /* Grid styles */
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+a:hover {
+    opacity: 0.6s;
+}
