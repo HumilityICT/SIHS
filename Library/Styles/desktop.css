@@ -1,5 +1,6 @@
 body {
     --content-padding: clamp(3rem, 6rem, 8rem);
+    scroll-behavior: smooth;
 }
 
 /* Header */
@@ -130,4 +131,13 @@ header {
     p {
         font-size: large;
     }
+}
+
+/* For the module intro */
+
+/* For the modules itself */
+.grades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
