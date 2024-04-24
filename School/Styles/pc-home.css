@@ -99,3 +99,8 @@ footer > :not(.notes) {
         font-style: italic;
     }
 }
+#background{
+    --size:50rem;
+    height: var(--size);
+    width: 100%;
+}
