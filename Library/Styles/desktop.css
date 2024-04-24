@@ -88,7 +88,7 @@ header {
 
 /* Styles the navigation link */
 .nav-link {
-    font-size: min(30px, 1.5rem);
+    font-size: min(24px, 1.25rem);
     font-weight: bolder;
     color: var(--color-font-light);
     text-align: center;
@@ -127,6 +127,13 @@ header {
         border-radius: 10px;
         background: var(--color-blue);
         color: var(--color-font-dark);
+        transition: var(--transition-500);
+
+        &:is(:hover, :active, :focus-within) {
+            outline: 2px solid var(--color-midnight);
+            background: var(--color-darkblue);
+            color: var(--color-font-light);
+        }
     }
 
     p {
@@ -154,10 +161,6 @@ header {
     justify-content: center;
     gap: 0.25rem;
     border: transparent;
-
-    &:is(:active, :focus-within) {
-        border-bottom: 1px solid var(--input-bottom);
-    }
 }
 
 #search-icon {
@@ -167,12 +170,15 @@ header {
 }
 
 #search-input {
-    border: none;
+    border: transparent;
     font-size: larger;
     background: transparent;
+    width: max(30rem, 50vw);
+    transition: var(--transition-500);
 
     &:is(:hover, :active, :focus-within) {
         outline: none;
+        border-bottom: 1px solid var(--input-bottom);
     }
 
     &::placeholder {
@@ -182,16 +188,20 @@ header {
 
 #search-button {
     padding: 0.5rem 2rem;
-    background: var(--color-darkblue);
     border-radius: 10px;
     border: none;
-    color: var(--color-font-light);
     cursor: pointer;
+    color: var(--color-font-dark);
+    background: var(--color-blue);
+    transition: var(--transition-500);
+    
+    &:is(:hover, :active, :focus-within) {
+        color: var(--color-font-light);
+        background: var(--color-darkblue);
+    }
 }
 
 .tag-list {
-    position: sticky;
-    top: 0;
     width: 100%;
     padding-block: 1rem;
     background: var(--color-midnight);
@@ -205,13 +215,18 @@ header {
 .tag-list li {
     padding: 0.5rem 1rem;
     border-radius: 15px;
+    transition: var(--transition-500);
     
     &:hover {
         background: var(--color-selected);
     }
 
-    a {
+    a:not(:hover) {
         color: var(--color-font-light);
+    }
+
+    a:hover {
+        color: var(--color-font-dark);
     }
 }
 
