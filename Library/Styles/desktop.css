@@ -1,8 +1,8 @@
-/* Header */
 body {
     --content-padding: clamp(3rem, 6rem, 8rem);
 }
 
+/* Header */
 header {
     padding: 1.25rem var(--content-padding);
     background: var(--color-midnight);
@@ -12,6 +12,7 @@ header {
     gap: 1rem;
 }
 
+/* Styles the logo */
 #logo {
     --size: 100px;
     aspect-ratio: 1 / 1;
@@ -19,6 +20,7 @@ header {
     height: var(--size);
 }
 
+/* Styles for the title of the page */
 #title {
     color: snow;
     font-family: 'Radley';
@@ -29,6 +31,7 @@ header {
     }
 }
 
+/* The design for mobile devices */
 @media screen and (min-width: 1200px) {
     br {
         display: none;
@@ -59,24 +62,29 @@ header {
     gap: 0.25rem;
 }
 
+/* Styles the links per item */
 .nav-item {
     padding: 1rem;
     border-radius: var(--border-radius);
     
+    /* Styles for the current page */
     &.current {
         background-color: var(--color-blue);
     }
     
+    /* Styles in hover */
     &:hover .nav-link {
         text-decoration: underline;
         color: var(--color-font-dark);
     }
     
+    /* Styles nav item excluding the current one */
     &:not(.nav-item.current):hover, &:active {
         background-color: color-mix(in srgb, var(--color-blue) 50%, rgba(255, 255, 255, 0.75) 50%);
     }
 }
 
+/* Styles the navigation link */
 .nav-link {
     font-size: min(30px, 1.5rem);
     font-weight: bolder;
@@ -85,17 +93,41 @@ header {
 
 /* Content Design */
 .featured {
-    /* Photo by mnm.all on Unsplash */
-    background: url('https://images.unsplash.com/photo-1518176258769-f227c798150e') center;
+    height: max(50vh, 40rem);
+    background: url(../Assets/LibraryBG.jpeg) center;
     background-size: cover;
-    padding: 4rem 2rem;
+    padding: 4rem clamp(4rem, 6vw, 10%);
+    color: var(--color-font-light);
     
-    /* Grid styles */
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}
+    /* Flex styles */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
 
-a:hover {
-    opacity: 0.6s;
+    h1 {
+        font-size: max(4rem, 4vh);
+    }
+
+    article {
+        width: 30%;
+        border-radius: 15px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    a {
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        font-weight: bolder;
+        background: var(--color-blue);
+        color: var(--color-font-dark);
+    }
+
+    p {
+        font-size: large;
+    }
 }
