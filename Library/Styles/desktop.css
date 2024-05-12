@@ -143,7 +143,6 @@ header {
 
 /* For the module tags and design */
 #modules {
-    padding-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -153,9 +152,9 @@ header {
 }
 
 /* For search bar */
-#search-bar {
+/* #search-bar {
     --input-bottom: var(--color-darkblue);
-    padding-bottom: 0.5rem;
+    padding-block: 1rem 0.5rem;
     width: max-content;
     display: flex;
     justify-content: center;
@@ -199,11 +198,11 @@ header {
         color: var(--color-font-light);
         background: var(--color-darkblue);
     }
-}
+} */
 
 .tag-list {
     width: 100%;
-    padding-block: 1rem;
+    padding-block: 0.5rem;
     background: var(--color-midnight);
     list-style-type: none;
     display: flex;
@@ -213,24 +212,20 @@ header {
 }
 
 .tag-list li {
-    padding: 0.5rem 1rem;
-    border-radius: 15px;
-    transition: var(--transition-500);
-    
-    &:hover {
-        background: var(--color-base-red);
-    }
-    
+    padding: 1rem;
+    border-radius: 10px;
+    transition: var(--transition-400);
+
     a {
         color: var(--color-font-light);
     }
-    
-    &#done:hover {
-        background: var(--color-selected);
-        
-        a {
-            color: var(--color-font-dark);
-        }
+}
+
+.tag-list li:hover {
+    background: var(--color-selected);
+
+    a {
+        color: var(--color-font-dark);
     }
 }
 
@@ -240,13 +235,15 @@ header {
     display: grid;
     grid-template-columns: minmax(80%, 80vw);
     place-content: center;
+    background: beige;
 }
 
 .grades .title {
-    width: min(25%, 25vw);
+    width: max-content;
     padding: 10px 15px;
+    margin-bottom: 5px;
     height: max-content;
-    background: var(--color-violet);
+    background: var(--color-blue);
     border-left: 0.5rem solid var(--color-midnight);
     font-size: 1.5em;
     border-radius: 5px;
@@ -257,9 +254,9 @@ header {
     max-width: 100%;
 }
 
-.grades > .scrollable > .scrollable-inner {
+.scrollable > .scrollable-inner {
     margin-top: 5px;
-    padding: 1rem;
+    padding: 5px 10px 1rem 10px;
     height: max-content;
     display: grid;
     grid-template-columns: repeat(auto, min(300px, 25vw));
@@ -269,25 +266,48 @@ header {
     border-radius: 5px;
 }
 
-.grades > .scrollable > .scrollable-inner .card-item {
-    --line-color: var(--color-darkblue);
+.scrollable-inner .card-item {
+    --line: 2px solid var(--color-darkblue);
+    --radius: 10px;
+
     width: min(300px, 25vw);
-    outline: 2px solid var(--line-color);
-    border-radius: 10px;
+    outline: var(--line);
+    border-radius: var(--radius);
+    position: relative;
 }
 
-.grades > .scrollable > .scrollable-inner .card-item > .card-image {
+.card-item > .card-image {
     width: 100%;
-    height: 15rem;
-    border-bottom: 2px solid var(--line-color);
+    height: 425px;
 }
 
-.grades > .scrollable > .scrollable-inner .card-item > .card-box {
-    padding: 5px;
+.card-item > .card-button {
+    width: 100%;
+    padding-block: 10px;
+    border: none;
+    font-size: larger;
+    border-top: var(--line);
+    color: var(--color-font-light);
+    background: var(--color-darkblue);
+    border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.card-item > .card-button:hover {
+    color: var(--color-font-dark);
     background: var(--color-blue);
 }
 
-.grades > .scrollable > .scrollable-inner .card-item > .card-box > .card-button {
-    width: 100%;
-    padding-block: 5px;
+/* Footer */
+footer {
+    background: var(--color-midnight);
+    color: var(--color-font-light);
+    padding-block: max(5vh, 1rem);
+    display: grid;
+    place-content: center;
+    gap: 1rem;
+}
+
+footer a {
+    color: var(--color-blue);
+    text-decoration: underline;
 }

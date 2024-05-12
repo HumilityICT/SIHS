@@ -48,7 +48,7 @@ header {
 }
 
 .page.current {
-    background-color: color-mix(in srgb, var(--color-violet) 80%, #fff 20%);
+    background-color: color-mix(in srgb, var(--color-blue) 80%, #fff 20%);
 }
 
 .page:not(.page.current):hover {
@@ -70,7 +70,7 @@ footer {
     height: max-content;
     min-width: 100vh;
     max-width: 100%;
-    background-color: var(--color-violet);
+    background-color: var(--color-blue);
     /* color: var(--color-tertiary); */
     
     display: flex;
