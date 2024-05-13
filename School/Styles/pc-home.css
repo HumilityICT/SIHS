@@ -23,7 +23,7 @@ header {
 }
 
 #logo {
-    width: min(4rem, 4vw);
+    width: 4rem;
     aspect-ratio: 1 / 1;
     margin-left: var(--margin-size);
 }
