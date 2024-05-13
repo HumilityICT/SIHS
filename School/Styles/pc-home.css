@@ -18,10 +18,17 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#logo {
+    width: min(4rem, 4vw);
+    aspect-ratio: 1 / 1;
+    margin-left: var(--margin-size);
 }
 
 #title {
-    margin-inline: var(--margin-size) auto;
     font-size: 2rem;
     font-weight: bolder;
     font-family: 'Radley';

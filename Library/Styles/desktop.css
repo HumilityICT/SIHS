@@ -235,7 +235,7 @@ header {
     display: grid;
     grid-template-columns: minmax(80%, 80vw);
     place-content: center;
-    background: beige;
+    background: snow;
 }
 
 .grades .title {
@@ -247,7 +247,10 @@ header {
     border-left: 0.5rem solid var(--color-midnight);
     font-size: 1.5em;
     border-radius: 5px;
-    display: grid;
+}
+
+.grades .title:not(:first-child) {
+    margin-top: 1rem;
 }
 
 .grades .scrollable {
@@ -295,6 +298,21 @@ header {
 .card-item > .card-button:hover {
     color: var(--color-font-dark);
     background: var(--color-blue);
+}
+
+.notice {
+    border: 2px solid var(--color-base-orange);
+    background-color: var(--color-base-yellow);
+    width: fit-content;
+    height: max-content;
+    padding: 10px 15px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.notice h3 {
+    margin-bottom: 0.25rem;
 }
 
 /* Footer */

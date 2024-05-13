@@ -20,6 +20,8 @@ For easier dark and light mode */
     --color-base-red: #e45252;
     --color-base-green: #52e4b8;
     --color-base-blue: #526de4;
+    --color-base-yellow: #FFF9D0;
+    --color-base-orange: #fde49e;
     
     --transition-500: all 500ms ease-in-out;
     --transition-400: all 400ms ease-in-out;
@@ -58,7 +60,7 @@ body {
 
 /* Change the Headings */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merriweather', 'Georgia', -apple-system, system-ui, serif;
+    font-family: 'Recursive', 'Merriweather', 'Georgia', -apple-system, system-ui, serif;
     line-height: 1.75;
 }
 
