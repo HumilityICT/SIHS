@@ -22,17 +22,12 @@ header {
     gap: 1rem;
 }
 
-#logo {
-    width: 3em;
-    aspect-ratio: 1 / 1;
-    margin-left: var(--margin-size);
-}
-
 #title {
     font-size: 2rem;
     font-weight: bolder;
     font-family: 'Radley';
     color: var(--color-font-light);
+    margin-left: var(--margin-size);
 }
 
 .page-list {
